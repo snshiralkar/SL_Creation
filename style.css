@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 130vh;
+  background-color: #b96969;
+  position: relative;
+}
+
+/* page 1 */
+#page_1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/poster_1.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100vw 60vw;
+  padding: 1px;
+}
+
+#page_1 #navbar {
+  width: 100%;
+  height: 8vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vw;
+}
+#navbar #logo img {
+  margin-top: 3vw;
+  /* background-color: yellow; */
+  width: 20vw;
+}
+#navbar #menu {
+  display: flex;
+  gap: 5vw;
+  text-decoration: none;
+}
+#navbar #menu a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: white;
+  font-family: "Rosario";
+}
+#navbar #icons {
+  margin-right: 2vw;
+  /* width: 20vw; */
+  /* background-color: yellow; */
+  display: flex;
+  gap: 2vw;
+  justify-content: space-evenly;
+}
+
+#navbar #icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  /* padding: 1.4vw; */
+  background-color: white;
+  font-size: 2vw;
+  font-weight: 800;
+}
+#page_1 #quotes {
+  position: absolute;
+  top: 16vw;
+  left: 4vw;
+  /* background-color: aqua; */
+  color: white;
+}
+#page_1 #quotes > h2 {
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-size: 5vw;
+  font-weight: 800;
+}
+#page_1 #quotes > h1 {
+  letter-spacing: 2.5px;
+  font-size: 5vw;
+  font-weight: 300;
+}
+#quotes #btn {
+  /* padding: 2vw; */
+  width: 15vw;
+  height: 5.5vw;
+  border-radius: 2.5vw;
+  font-size: 1.5vw;
+  border: none;
+  background-color: rgb(191, 126, 66);
+  color: white;
+  margin-top: 10vh;
+}
+
+#qualities {
+  position: relative;
+  top: 39vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: start;
+}
+#qualities #q_img img {
+  width: 5vw;
+  height: 10vw;
+  /* background-color: rgb(157, 113, 113); */
+}
+#qualities #q_name {
+  /* background-color: turquoise; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+/* page 2 */
+
+#page_2 {
+  width: 100%;
+  height: 115vh;
+  background-color: rgb(255, 251, 243);
+}
+#pageno2 {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellow; */
+}
+#page_2 #photographer_img {
+  /* background-color: red; */
+  position: absolute;
+  top: 148vh;
+  left: 13vw;
+  width: 30vw;
+  height: 62vh;
+}
+#page_2 #photographer_img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#page_2 #info {
+  width: 50vw;
+  /* background-color: red; */
+  position: absolute;
+  top: 150vh;
+  left: 48vw;
+}
+#page_2 #info h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4vw;
+  color: #b96969;
+}
+#page_2 #info > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+  color: rgb(150, 135, 119);
+}
+#page_2 #info p {
+  /* background-color: antiquewhite; */
+  color: rgb(150, 135, 119);
+  margin-top: 2vh;
+  width: 40vw;
+  font-size: 1.7vw;
+}
+#pageno2 #experiance {
+  /* background-color: rgb(196, 226, 255); */
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  gap: 5vw;
+  font-size: 3vw;
+  margin-top: 2vw;
+}
+
+#pageno2 #experiance #experiance_1 {
+  /* background-color: #b96969; */
+  display: flex;
+  flex-direction: column;
+}
+#pageno2 #experiance #experiance_1 h1 {
+  color: #b96969;
+  font-size: 3vw;
+}
+
+#pageno2 #experiance #newspan {
+  color: rgb(150, 135, 119);
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+#pageno2 #experiance #experiance_2 {
+  /* background-color: #d6b5b5; */
+  display: flex;
+  flex-direction: column;
+}
+#pageno2 #experiance #experiance_2 h1 {
+  color: #b96969;
+  font-size: 3vw;
+}
+#pageno2 #experiance #experiance_2 #newspan {
+  font-size: 2vw;
+}
+
+/* page no 3 */
+
+#page_3 {
+  width: 100%;
+  height: 220vh;
+  background-color: rgb(255, 251, 243);
+  position: relative;
+}
+
+#page_3 #content {
+  /* background-color: yellow; */
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+}
+#page_3 #content h3 {
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(150, 135, 119);
+  margin-top: 2vh;
+  /* margin-bottom: 2vh; */
+}
+#page_3 #content h1 {
+  font-family: "Dancing Script", cursive;
+  color: #b96969;
+  font-size: 5vw;
+  font-weight: 400;
+}
+
+#page_3 #services {
+  /* background-color: wheat; */
+  position: absolute;
+  top: 55vh;
+  left: 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10vw; */
+}
+#page_3 #services #service_1 {
+  /* background-color: violet; */
+  width: 20vw;
+  /* height: 60vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 3vw;
+}
+
+#page_3 #services #service_1 #service_img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+#page_3 #services #service_1 #service_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+#service_1 h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4vw;
+  font-weight: 400;
+  color: #b96969;
+  margin-bottom: 2vh;
+}
+#service_1 h3 {
+  /* background-color: rgb(0, 242, 255); */
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(150, 135, 119);
+  line-height: 2.3vw;
+}
+
+#page_3 #moments_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+  background-color: white;
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  height: 50vh;
+}
+#page_3 #moments_1 h1 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 400;
+  color: rgb(118, 100, 82);
+}
+
+#page_3 #moments_1 #btn {
+  width: 18vw;
+  height: 12vh;
+  border-radius: 2.5vw;
+  font-size: 1.5vw;
+  border: none;
+  background-color: rgb(191, 126, 66);
+  color: white;
+}
+
+/* poster */
+
+#poster {
+  /* width: 100%; */
+  height: 90vh;
+  background-image: url("./images/poster_2.jpg");
+  background-position: 0 10%;
+  background-size: cover;
+}
+#poster #overlay {
+  background-color: rgba(0, 0, 0, 0.179);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: white;
+}
+#poster #overlay #overlay_content_1 {
+  /* background-color: red; */
+  width: 50%;
+  position: absolute;
+  left: 7vw;
+  top: 12vh;
+}
+#poster #overlay #overlay_content_1 h1 {
+  font-size: 2vw;
+  font-family: "Nanum Gothic", sans-serif;
+}
+#poster #overlay #overlay_content_1 h2 {
+  font-size: 5vw;
+  font-family: "Dancing Script", cursive;
+}
+
+#poster #overlay #overlay_content_2 {
+  /* background-color: red; */
+  /* width: 50%; */
+  position: absolute;
+  left: 15vw;
+  top: 45vh;
+  line-height: 8vh;
+  font-size: 1.5vw;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+/* work */
+#work {
+  /* width: 100%; */
+  /* height: 220vh; */
+  /* background-color: violet; */
+  padding: 2vw;
+}
+#work h1 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(182, 172, 163);
+}
+#work h2 {
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+  color: rgb(191, 126, 66);
+  margin-bottom: 2vw;
+}
+
+#work #work-div {
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#work .work-div-1 img {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  min-width: 27vw;
+  min-height: 27vw;
+  margin: 2vw;
+  /* background-color: red; */
+  /* width: 30%; */
+  height: 60vh;
+}
+
+#work .work-div-wrap .work-div-2 img {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  min-width: 27vw;
+  min-height: 27vw;
+  margin: 2vw;
+  /* background-color: red; */
+  /* width: 30%; */
+  height: 60vh;
+}
+
+#work .work-div-wrap .work-div-2 p {
+  /* background-color: yellow; */
+  margin-top: 2vw;
+  font-size: 1.2vw;
+  line-height: 1.9vw;
+  font-weight: 700;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #89796a;
+  text-align: center;
+}
+
+#work .work-div-wrap .work-div-2 button {
+  width: 18vw;
+  height: 12vh;
+  border-radius: 2.5vw;
+  font-size: 1.5vw;
+  border: none;
+  background-color: rgb(191, 126, 66);
+  color: white;
+  margin-left: 6.5vw;
+  margin-top: 4vw;
+}
+
+/* responsive design */
+
+@media (width < 400px) {
+  #main {
+    width: 100%;
+    /* height: 130vh; */
+    background-color: #b96969;
+    position: relative;
+  }
+  #page_1 {
+    position: relative;
+    background-image: url("./images/poster_1.jpg");
+    background-size: 100% 100%;
+    object-fit: fill;
+    padding: 1px;
+  }
+  #page_1 #navbar {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+  }
+  #navbar #logo img {
+    margin-top: 1vw;
+    /* background-color: yellow; */
+    width: 22vw;
+  }
+  #navbar #menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+    text-decoration: none;
+  }
+  #navbar #menu a {
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+  #navbar #icons {
+    display: flex;
+    gap: 4vw;
+    justify-content: space-evenly;
+  }
+
+  #navbar #icons i {
+    width: 7vw;
+    height: 7vw;
+    font-size: 4vw;
+  }
+
+  #page_1 #quotes {
+    position: absolute;
+    top: 60vw;
+    left: 4vw;
+    /* background-color: aqua; */
+    color: white;
+  }
+  #page_1 #quotes > h2 {
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+    font-size: 5vw;
+    font-weight: 800;
+  }
+  #page_1 #quotes > h1 {
+    letter-spacing: 2.5px;
+    font-size: 5vw;
+    font-weight: 300;
+  }
+  #quotes #btn {
+    /* padding: 2vw; */
+    width: 15vw;
+    height: 5.5vw;
+    border-radius: 2.5vw;
+    font-size: 1.5vw;
+    border: none;
+    background-color: rgb(191, 126, 66);
+    color: white;
+    margin-top: 10vh;
+  }
+
+  #qualities {
+    position: relative;
+    top: 150vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+  }
+  #qualities #q_img img {
+    width: 5vw;
+    height: 10vw;
+    /* background-color: rgb(157, 113, 113); */
+  }
+  #qualities #q_name {
+    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+}
